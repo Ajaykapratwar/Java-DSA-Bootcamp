@@ -1,0 +1,21 @@
+
+This flow should be flow to learn dynamic programming efficiently.
+
+1. Memoization and Tabulation
+2. 1D DP Problems
+3. 2D DP Grid Problems
+4. Knapsack and Unbounded Knapsack Problems
+5. DP On Strings
+6. MCM Problems and DP On Trees
+
+
+How to identify the DP problems
+1) count the total no. of ways
+2) min / max  (best / worst way)
+3) Try all possible ways
+
+
+How to solve problems
+1) Try to represent the problem in terms of index
+2) Do all possible stuffs according to problem statement
+3) Sum of all stuffs
