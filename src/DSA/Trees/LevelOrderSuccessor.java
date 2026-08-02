@@ -1,0 +1,31 @@
+//package DSA.Trees;
+//
+//import java.util.ArrayList;
+//import java.Binary_Tree.BinaryTree;
+//
+//public class LevelOrderSuccessor {
+//    public TreeNode findSuccessor(TreeNode root, int key) {
+//        if(root == null) {
+//            return null;
+//        }
+//
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        queue.offer(root);
+//
+//        while (!queue.isEmpty()) {
+//            int levelSize = queue.size();
+//            TreeNode currentNode = queue.poll();
+//            if (currentNode.left != null) {
+//                queue.offer(currentNode.left);
+//            }
+//            if (currentNode.right != null) {
+//                queue.offer(currentNode.right);
+//            }
+//
+//            if(currentNode == key) {
+//                break;
+//            }
+//        }
+//        return queue.peek();
+//    }
+//}
