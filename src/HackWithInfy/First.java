@@ -2,7 +2,11 @@ package HackWithInfy;
 
 public class First {
     public static void main(String[] args) {
-
+        int n = 7;
+        int[] arr = {1, 4, 5, 1, 6, 7, 8};
+        int q = 5;
+        int[][] queries = {{1,1,6}, {1,1,5}, {2,5,5}, {2,3,4}, {2,3,3}};
+        System.out.println(solve(n, arr, queries));
     }
 
     public static long solve(int n, int[] A, int[][] query) {

@@ -1,0 +1,233 @@
+
+1.
+Question 1
+A struct is a value type. What does this mean?
+
+.
+Each instance keeps a unique copy of its data
+
+
+
+Instances share a single copy of the data
+
+
+1 point
+2.
+Question 2
+What is the output of the following code?
+
+12345678910
+struct Employee {
+  var salary: Double
+  var tax = 0.2
+  mutating func deductTax() {
+    salary = salary - (tax * salary)
+  }
+}
+var emp = Employee(salary: 100)
+emp.deductTax()
+print(emp.salary)
+
+.
+20
+
+
+
+80.0
+
+
+
+0.2
+
+
+
+100
+
+
+1 point
+3.
+Question 3
+ What is the output of the following code?
+
+12345678
+struct Tax {
+  var amount: Int = 5
+}
+var tax1 = Tax()
+var tax2 = tax1
+tax1.amount = 20
+print("\(tax1.amount), \(tax2.amount)")
+
+
+.
+5, 5
+
+
+
+20, 5
+
+
+
+20, 20
+
+
+
+5, 20
+
+
+1 point
+4.
+Question 4
+What is the output of the following code?
+
+1234567
+class Product   {
+  var price: Int = 5
+}
+var product1 = Product()
+var product2 = product1
+product1.price = 20
+print("\(product1.price), \(product2.price)")
+
+.
+20, 5
+
+
+
+5, 5
+
+
+
+5, 20
+
+
+
+20, 20
+
+
+1 point
+5.
+Question 5
+What is the output of the following code?
+
+1234567891011
+class Vehicle {
+  var type: String
+  var noOfWheels: Int
+  init(type: String, wheels: Int) {
+    self.type = type
+    noOfWheels = wheels + 1
+  }
+}
+let car = Vehicle(type: "Jeep", wheels: 3)
+print(car.type, "has", car.noOfWheels, "wheels")
+
+
+.
+Jeep has 5 wheels
+
+
+
+Jeep has 4 wheels
+
+
+
+Jeep has 3 wheels
+
+
+1 point
+6.
+Question 6
+ What is the output of the following code?
+
+1234567891011
+class Square {
+  var width: Double = 0
+  var area: Double {
+    return width * width
+  }
+}
+
+let square = Square()
+square.width = 2
+print(square.area)
+
+
+.
+4.0
+
+
+
+2.0
+
+
+
+0.0
+
+
+1 point
+7.
+Question 7
+Which of the following statements best describes the differences between structures and classes in Swift? Select all that apply.
+
+.
+Classes are known as reference types while structures are known as value types.
+
+
+
+Structures come with an auto-generated memberwise initializer, while with classes you must create your own.
+
+
+
+Structures can use inheritance and by that extend the subclass.
+
+
+1 point
+8.
+Question 8
+Why should a structure be used as a starting point when creating a new data type and not a class? Select all that apply.
+
+.
+Because a local change in the code when using a structure will not affect other parts of the code.
+
+
+
+Because in Swift standard library you will find that reference types are primary used.
+
+
+
+Because a structure is a value type, and a class is a reference type.
+
+
+1 point
+9.
+Question 9
+What are the correct statements regarding stored and computed properties in classes?
+
+.
+A computed property is read-only
+
+
+
+A stored property is primary used when there is a need to encapsulate a block of computational code.
+
+
+
+A computed property does not store a value.
+
+
+1 point
+10.
+Question 10
+When creating a class initializer, when would it be necessary to use the self keyword?
+
+.
+When name of the property in the class is the same as the name of the parameters in the initializer.
+
+
+
+When a class property is assigned a default value.
+
+
+
+When there are more than 4 parameters in the class initializer.
